@@ -20,16 +20,6 @@ Leading user interface development for product platform and consumer sites.  Tec
 
 ---
 
-### AffinityX, Sr. UI Engineer
-
-January 2015 – Present
-
-Senior UI developer for software solutions team.  Assist with the front end architecture on B2B white-label marketing solutions. 
-
-**Technologies:** KnockoutJS, jQuery, SASS, Bourbon/Neat
-
----
-
 ### ThreadLab, Inc, Front-End Engineer
 
 March 2014 – Present
