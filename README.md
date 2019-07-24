@@ -1,14 +1,16 @@
+# Tommy Rosario
+
 Hello! I'm a a senior front-end specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world's most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.
 
 I have a ongoing passion for the evolving web and enjoy helping companies bring their visions to life through technology. 
 
-### Skillset
+## Skillset
 
 React, Redux, Angular JS, Material UI, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz.
 
-### Experience
+## Experience
 
-#### CityBldr, Front-End Engineer
+### CityBldr, Front-End Engineer
 
 May 2017 – Present
 
@@ -18,7 +20,7 @@ Leading user interface development for product platform and consumer sites.  Tec
 
 ---
 
-#### AffinityX, Sr. UI Engineer
+### AffinityX, Sr. UI Engineer
 
 January 2015 – Present
 
@@ -28,7 +30,7 @@ Senior UI developer for software solutions team.  Assist with the front end arch
 
 ---
 
-#### ThreadLab, Inc, Front-End Engineer
+### ThreadLab, Inc, Front-End Engineer
 
 March 2014 – Present
 
@@ -38,7 +40,7 @@ Assisted in building a solution for a men's shopping service platform for males 
 
 ---
 
-#### DoSomething.org, Software Engineer
+### DoSomething.org, Software Engineer
 
 May 2014 – January 2015
 
@@ -48,7 +50,7 @@ Contributed to open-source Drupal platform, interface framework and pattern libr
 
 ---
 
-#### CPXi, Software Engineer
+### CPXi, Software Engineer
 
 October 2013 – Present
 
@@ -58,7 +60,7 @@ Senior application developer for Consumer Apps and Real-time divisions. Building
 
 ---
 
-#### Alexander Interactive, Senior Technical Lead / Senior Front-End Engineer
+### Alexander Interactive, Senior Technical Lead / Senior Front-End Engineer
 
 July 2006 – September 2013
 
@@ -68,7 +70,7 @@ Built, managed and lead a team of seven front-end developers. In charge of provi
 
 ---
 
-### Education
+## Education
 
 Bachelors of Science, Computer & Information Sciences
 
