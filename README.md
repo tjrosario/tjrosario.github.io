@@ -1,3 +1,5 @@
+[GitHub](https://github.com/tjrosario) | [LinkedIn](https://www.linkedin.com/in/tommy-rosario-65771711)
+
 # Hello
 
 And welcome! I'm a a senior front-end specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world's most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.
