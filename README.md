@@ -1,6 +1,6 @@
-## Hello
+# Tommy Rosario
 
-And welcome! I'm a a senior front-end specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world's most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.
+Hello and welcome! I'm a a senior front-end specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world's most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.
 
 I have a ongoing passion for the evolving web and enjoy helping companies bring their visions to life through technology. 
 
