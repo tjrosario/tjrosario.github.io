@@ -3,3 +3,10 @@ theme: jekyll-theme-cayman
 title: Tommy Rosario
 
 description: front-end developer extraordinaire 
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+  Author's home: "http://deanattali.com
