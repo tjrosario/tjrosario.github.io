@@ -93910,12 +93910,7 @@ function WorkSampleActions(props) {
     target: "_blank"
   }, _react.default.createElement(_core.IconButton, {
     className: "fas fa-external-link-alt"
-  })) : null, _react.default.createElement(_core.IconButton, {
-    className: "fas fa-video",
-    onClick: function onClick() {
-      return selectItem(item);
-    }
-  }));
+  })) : null);
 }
 },{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js"}],"src/actionTypes.js":[function(require,module,exports) {
 "use strict";
@@ -94050,6 +94045,11 @@ function (_React$Component) {
           component: "p"
         }, item.description))), _react.default.createElement(_core.CardActions, null, _react.default.createElement(_WorkSampleActions.default, {
           item: item
+        }), _react.default.createElement(_core.IconButton, {
+          className: "fas fa-video",
+          onClick: function onClick() {
+            return selectItem(item);
+          }
         }))));
       }));
     }
@@ -101060,7 +101060,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36351" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44262" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
