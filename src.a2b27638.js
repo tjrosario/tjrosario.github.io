@@ -91542,7 +91542,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var ABOUT = ["And welcome! I’m a a senior frontend specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world’s most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.", "I have a ongoing passion for the evolving web and enjoy helping companies bring their visions to life through technology."];
+var ABOUT = ["And welcome! I'm a senior frontend specialist and web engineer with several years of experience developing small to large scale web sites and applications for some of the world's most recognized brands including including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi, and many more.", "I have a ongoing passion for the evolving web and enjoy helping companies bring their visions to life through technology."];
 var _default = ABOUT;
 exports.default = _default;
 },{}],"src/common/data/skillset.js":[function(require,module,exports) {
@@ -101060,7 +101060,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44262" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41009" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
