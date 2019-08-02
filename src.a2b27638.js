@@ -94022,7 +94022,7 @@ function (_React$Component) {
       }, items.collection.map(function (item) {
         return _react.default.createElement(_core.Grid, {
           item: true,
-          sm: 4,
+          sm: 6,
           key: item.id
         }, _react.default.createElement(_core.Card, null, _react.default.createElement(_core.CardActionArea, null, _react.default.createElement(_core.CardMedia, {
           className: 'card-media',
@@ -94034,7 +94034,8 @@ function (_React$Component) {
         }), _react.default.createElement(_core.CardContent, {
           onClick: function onClick() {
             return selectItem(item);
-          }
+          },
+          className: "card-content"
         }, _react.default.createElement(_core.Typography, {
           gutterBottom: true,
           variant: "h5",
@@ -100864,6 +100865,13 @@ var WORK_SAMPLES = [{
   src: 'video/proofs.mp4',
   preview: 'img/logo/smb.png',
   description: 'Online proofing system tailored for helping SMBs deliver marketing projects efficiently by streamlining reviewing and approving creative content.'
+}, {
+  id: 3,
+  title: 'Giphy Weirdness Calculator',
+  src: 'video/giphy.mp4',
+  preview: 'img/logo/giphy.svg',
+  description: 'A fun little app that allows you to search the Giphy Translate API by supplying a "weirdness" level. You can add any GIFs to your favorites list and generate an average "weirdness score."',
+  github: 'https://github.com/tjrosario/giphy'
 }];
 var _default = WORK_SAMPLES;
 exports.default = _default;
@@ -101060,7 +101068,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41009" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39621" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

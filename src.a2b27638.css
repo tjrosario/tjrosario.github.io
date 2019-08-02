@@ -51,6 +51,10 @@ footer {
   background-size: contain;
   height: 200px; }
 
+@media (min-width: 768px) {
+  .card-content {
+    height: 100px; } }
+
 @charset "UTF-8";
 .video-react .video-react-big-play-button:before, .video-react .video-react-control:before {
   position: absolute;
