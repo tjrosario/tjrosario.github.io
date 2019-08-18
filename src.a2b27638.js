@@ -91552,7 +91552,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var SKILLSET = ["React, Redux, Angular JS, Material UI, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz."];
+var SKILLSET = ["React, Redux, Angular JS, Material UI, Jest, Enzyme, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz."];
 var _default = SKILLSET;
 exports.default = _default;
 },{}],"src/common/data/experience.js":[function(require,module,exports) {
@@ -93902,12 +93902,14 @@ function WorkSampleActions(props) {
   var item = props.item;
   return _react.default.createElement(_react.default.Fragment, null, item.github ? _react.default.createElement("a", {
     href: item.github,
-    target: "_blank"
+    target: "_blank",
+    className: "github"
   }, _react.default.createElement(_core.IconButton, {
     className: "fab fa-github"
   })) : null, item.url ? _react.default.createElement("a", {
     href: item.url,
-    target: "_blank"
+    target: "_blank",
+    className: "url"
   }, _react.default.createElement(_core.IconButton, {
     className: "fas fa-external-link-alt"
   })) : null);
@@ -101068,7 +101070,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39621" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41481" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
