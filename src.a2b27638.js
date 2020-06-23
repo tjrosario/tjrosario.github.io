@@ -100553,7 +100553,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var ABOUT = ["Hello!  I'm a frontend developer based out of the Jersey Shore.  I love working on fun, innovative websites.  I've been involved in technology for almost two decades now.  My journey has given me the pleasure to work with some of the world's most recognized brands including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi and many others.  I've also been lucky enough to work along side with some highly talented technologists as my peers, which I have looked to as mentors throughout my career.", "I'm a bit of a perfectionist and take a lot of pride in all of my work.  I try to leave every piece of code a bit more modular, performance and readable than how I found it.  The web is constantly evolving and I do my part in staying up to date with latest trends and solutions.", "Beyond the keyboard I have a huge passion for music, fitness and the beach!  Family and a healthy work-life balance is key to my happiness.", "I'm always looking for new opportunities and believe, with my extensive experience and passion for technology, I can be an asset to your team.", "Let's chat about how I can be a good fit for your company!"];
+var ABOUT = ["Hello!  I'm a frontend developer based out of the Jersey Shore.  I love working on fun, innovative websites.  I've been involved in technology for almost two decades now.  My journey has given me the pleasure to work with some of the world's most recognized brands including iHeartRadio, Topps, Estee Lauder, Lowes, Virgin Mobile, Citi and many others.  I've also been lucky enough to work along side with some highly talented technologists as my peers, which I have looked to as mentors throughout my career.", "I'm a bit of a perfectionist and take a lot of pride in all of my work.  I try to leave every piece of code a bit more modular, performant and readable than how I found it.  The web is constantly evolving and I do my part in staying up to date with latest trends and solutions.", "Beyond the keyboard I have a huge passion for music, fitness and the beach!  Family and a healthy work-life balance is key to my happiness.", "I'm always looking for new opportunities and believe, with my extensive experience and passion for technology, I can be an asset to your team.", "Let's chat about how I can be a good fit for your company!"];
 var _default = ABOUT;
 exports.default = _default;
 },{}],"src/common/data/skillset.js":[function(require,module,exports) {
@@ -103128,12 +103128,12 @@ function (_React$Component) {
           component: "p"
         }, item.description))), _react.default.createElement(_core.CardActions, null, _react.default.createElement(_WorkSampleActions.default, {
           item: item
-        }), _react.default.createElement(_core.IconButton, {
+        }), item.src ? _react.default.createElement(_core.IconButton, {
           className: "fas fa-video",
           onClick: function onClick() {
             return selectItem(item);
           }
-        }))));
+        }) : null)));
       }));
     }
   }]);
@@ -110186,12 +110186,19 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var WORK_SAMPLES = [{
   id: 0,
+  title: 'Brewery App',
+  // src: 'video/real-estate.mp4',
+  preview: 'img/logo/brewery.jpg',
+  description: 'Fun little brewery app that lets you search breweries across the country using different sets of criteria. Built using React\'s context and hooks API\'s.',
+  github: 'https://github.com/tjrosario/brewery-app'
+}, {
+  id: 1,
   title: 'Real Estate Ai Platform',
   src: 'video/real-estate.mp4',
   preview: 'img/logo/real-estate.jpg',
   description: 'Real Estate platform that leverages Ai, machine learning and data science to determine best use of land for both buyers and sellers.'
 }, {
-  id: 1,
+  id: 2,
   title: 'ThreadLab Conversion Funnel',
   src: 'video/mens-shopping.mp4',
   preview: 'img/logo/mens-shopping.png',
@@ -110199,13 +110206,13 @@ var WORK_SAMPLES = [{
   url: 'https://www.mythreadlab.com',
   github: 'https://github.com/tjrosario/mens-shopping-app'
 }, {
-  id: 2,
+  id: 3,
   title: 'Proofing System for SMBs',
   src: 'video/proofs.mp4',
   preview: 'img/logo/smb.png',
   description: 'Online proofing system tailored for helping SMBs deliver marketing projects efficiently by streamlining reviewing and approving creative content.'
 }, {
-  id: 3,
+  id: 4,
   title: 'Giphy Weirdness Calculator',
   src: 'video/giphy.mp4',
   preview: 'img/logo/giphy.svg',
@@ -110407,7 +110414,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33383" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37711" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
