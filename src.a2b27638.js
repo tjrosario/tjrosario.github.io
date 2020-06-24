@@ -100574,15 +100574,21 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var EXPERIENCE = [{
+  title: 'Frontend Developer',
+  company: 'Plixer',
+  date: 'September 2019 – Present',
+  description: ["Work within the product development team re-architecting their network traffic analysis product from a legacy tech-stack to modern Angular 8+ framework."],
+  technology: "Angular 8+, Typescript, Sass"
+}, {
   title: 'Frontend Engineer',
   company: 'CityBldr',
-  date: 'May 2017 – Present',
+  date: 'May 2017 – May 2020',
   description: ["Leading user interface development for product platform and consumer sites. Technology leverages Artificial Intelligence, machine learning and data science to determine the best value and uses for land for both sellers and buyers."],
   technology: "React, Redux, LESS"
 }, {
   title: 'Frontend Engineer',
   company: 'ThreadLab Inc',
-  date: 'Mar 2014 – Present',
+  date: 'Mar 2014 – Jan 2020',
   description: ["Assisted in building a solution for a men's shopping service platform for males who hate to shop. Focused on menswear basics and essentials from well known brands. The service uses technology, rather than the typical stylist, to ensure customers receive perfectly fitting garments."],
   technology: "Angular 5+, NodeJS, ES6 (2015), SASS, Bourbon/Neat, Grunt, Stripe, Paypal, Groovy on Grails, MongoDB"
 }, {
@@ -110414,7 +110420,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37711" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41161" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
