@@ -100573,13 +100573,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var EXPERIENCE = [{
-  title: 'Frontend Developer',
-  company: 'Plixer',
-  date: 'September 2019 – Present',
-  description: ["Work within the product development team re-architecting their network traffic analysis product from a legacy tech-stack to modern Angular 8+ framework."],
-  technology: "Angular 8+, Typescript, Sass"
-}, {
+var EXPERIENCE = [
+/*   {
+    title: 'Frontend Developer',
+    company: 'Plixer',
+    date: 'September 2019 – Present',
+    description: [
+      "Work within the product development team re-architecting their network traffic analysis product from a legacy tech-stack to modern Angular 8+ framework."
+    ],
+    technology: "Angular 8+, Typescript, Sass"
+  }, */
+{
   title: 'Frontend Engineer',
   company: 'CityBldr',
   date: 'May 2017 – May 2020',
