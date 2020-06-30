@@ -100252,23 +100252,25 @@ exports.default = void 0;
 
 var _styles = require("@material-ui/core/styles");
 
-var meriweather = "'Merriweather', serif";
-var montserrat = "'Montserrat', sans-serif";
-var lora = "'Lora, serif'";
+var serifFont1 = "'Lora', serif";
+var serifFont2 = "'Merriweather', serif";
 var theme = (0, _styles.createMuiTheme)({
   typography: {
     h1: {
       color: '#558bb5',
       fontSize: '2.4rem',
-      fontFamily: lora,
+      fontFamily: serifFont1,
       fontWeight: 500,
       textTransform: 'uppercase'
     },
     h2: {
       fontSize: '2.0rem',
-      fontFamily: lora,
+      fontFamily: serifFont1,
       fontWeight: 600,
+      borderBottom: '2px solid #558bb5',
       color: '#558bb5',
+      display: 'inline-block',
+      padding: '0 0 5px',
       textTransform: 'uppercase'
     },
     h3: {
@@ -100296,7 +100298,7 @@ var theme = (0, _styles.createMuiTheme)({
       fontSize: '.8rem'
     },
     fontSize: 10,
-    fontFamily: meriweather,
+    fontFamily: serifFont2,
     useNextVariants: true
   }
 });
@@ -100543,8 +100545,7 @@ function (_React$Component) {
       return _react.default.createElement("div", {
         className: classes.subsection
       }, _react.default.createElement(_Typography.default, {
-        variant: "h3",
-        gutterBottom: true
+        variant: "h3"
       }, data.title), _react.default.createElement(_Typography.default, {
         variant: "h5",
         gutterBottom: true,
@@ -110161,6 +110162,7 @@ function (_React$Component) {
         sm: 12
       }, _react.default.createElement(_Header.default, null), _react.default.createElement(_core.Typography, {
         variant: "h1",
+        gutterBottom: true,
         align: "center"
       }, "Tommy Rosario"), _react.default.createElement("div", {
         className: classes.company,
@@ -110484,7 +110486,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39157" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44975" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
