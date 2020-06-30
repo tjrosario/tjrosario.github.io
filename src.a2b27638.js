@@ -100254,37 +100254,39 @@ var _styles = require("@material-ui/core/styles");
 
 var meriweather = "'Merriweather', serif";
 var montserrat = "'Montserrat', sans-serif";
+var lora = "'Lora, serif'";
 var theme = (0, _styles.createMuiTheme)({
   typography: {
     h1: {
-      color: '#504d4d',
+      color: '#558bb5',
       fontSize: '2.4rem',
-      fontFamily: montserrat,
+      fontFamily: lora,
+      fontWeight: 500,
       textTransform: 'uppercase'
     },
     h2: {
       fontSize: '2.0rem',
-      fontFamily: meriweather,
-      color: '#bb7878'
+      fontFamily: lora,
+      fontWeight: 600,
+      color: '#558bb5',
+      textTransform: 'uppercase'
     },
     h3: {
+      color: '#000',
       fontSize: '1.4rem',
-      fontFamily: meriweather,
+      fontWeight: 600,
       lineHeight: '1.5',
       marginTop: '20px'
     },
     h4: {
       color: '#666',
-      fontSize: '1.1rem',
-      fontFamily: meriweather
+      fontSize: '.9rem'
     },
     h5: {
-      fontSize: '1.2rem',
-      fontFamily: meriweather
+      fontSize: '1.2rem'
     },
     h6: {
-      fontSize: '1.1rem',
-      fontFamily: meriweather
+      fontSize: '1.1rem'
     },
     body1: {
       fontSize: '1rem',
@@ -100294,7 +100296,7 @@ var theme = (0, _styles.createMuiTheme)({
       fontSize: '.8rem'
     },
     fontSize: 10,
-    fontFamily: montserrat,
+    fontFamily: meriweather,
     useNextVariants: true
   }
 });
@@ -100344,6 +100346,19 @@ var styles = {
   badge: {
     margin: '10px',
     width: '50px'
+  },
+  company: {
+    color: '#a97f26',
+    fontSize: '1.1rem',
+    fontWeight: 700
+  },
+  chip: {
+    fontSize: '1.0rem',
+    margin: '10px 10px 10px 0'
+  },
+  timestamp: {
+    marginRight: '5px',
+    opacity: .6
   }
 };
 var _default = styles;
@@ -100379,7 +100394,7 @@ function Header() {
     "aria-label": "main navigation"
   }, _react.default.createElement(_core.Avatar, {
     alt: "Tommy Rosario",
-    src: 'img/emoji.gif',
+    src: 'img/memoji.png',
     className: classes.avatar
   }), _react.default.createElement("div", {
     className: "social"
@@ -100398,6 +100413,12 @@ function Header() {
     target: "_blank"
   }, _react.default.createElement(_core.IconButton, {
     className: "far fa-envelope ".concat(classes.icon)
+  })), _react.default.createElement("a", {
+    href: "/resume.pdf",
+    title: "Download Resume",
+    download: true
+  }, _react.default.createElement(_core.IconButton, {
+    className: "fas fa-file-alt ".concat(classes.icon)
   })))));
 }
 },{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","@material-ui/styles":"node_modules/@material-ui/styles/esm/index.js","../common/theme/Styles":"src/common/theme/Styles.js"}],"src/components/Footer.js":[function(require,module,exports) {
@@ -100525,18 +100546,22 @@ function (_React$Component) {
       }, _react.default.createElement(_Typography.default, {
         variant: "h3",
         gutterBottom: true
-      }, data.company, ", ", data.title), _react.default.createElement(_Typography.default, {
+      }, data.title), _react.default.createElement(_Typography.default, {
+        variant: "h5",
+        gutterBottom: true,
+        className: classes.company
+      }, data.company), _react.default.createElement(_Typography.default, {
         variant: "h4",
         gutterBottom: true
-      }, data.date), _lodash.default.map(data.description, function (para, idx) {
+      }, _react.default.createElement("i", {
+        className: classes.timestamp + " far fa-calendar-alt"
+      }), " ", data.date), _lodash.default.map(data.description, function (para, idx) {
         return _react.default.createElement(_Typography.default, {
           variant: "body1",
           gutterBottom: true,
           key: idx
         }, para);
-      }), _react.default.createElement(_Typography.default, {
-        variant: "body1"
-      }, _react.default.createElement("strong", null, "Technology:"), " ", data.technology));
+      }));
     }
   }]);
 
@@ -100563,7 +100588,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var SKILLSET = ["React, Redux, Angular 8+, Typescript, Material UI, Jest, Enzyme, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz."];
+var SKILLSET = {
+  /*   "React, Redux, Angular 8+, Typescript, Material UI, Jest, Enzyme, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz." */
+  coding: ['react', 'redux', 'angular', 'typescript', 'es2015', 'javascript', 'scss', 'bootstrap', 'material-ui', 'html5', 'jest', 'enzyme', 'github', 'gitlab', '.NET'],
+  design: ['photoshop', 'zeplin'],
+  projectManagement: ['jira', 'zenhub', 'trello']
+};
 var _default = SKILLSET;
 exports.default = _default;
 },{}],"src/common/data/experience.js":[function(require,module,exports) {
@@ -100588,6 +100618,12 @@ var EXPERIENCE = [
   company: 'CityBldr',
   date: 'May 2017 – May 2020',
   description: ["Leading user interface development for product platform and consumer sites. Technology leverages Artificial Intelligence, machine learning and data science to determine the best value and uses for land for both sellers and buyers."],
+  technology: "React, Redux, LESS"
+}, {
+  title: 'Sr. UI Developer',
+  company: 'AffinityX',
+  date: 'Jan 2015 – May 2020',
+  description: ["Senior developer on building company’s proprietary creative content delivery platform tailored for SMB’s requiring a white label digital advertising and marketing solution.  The platform simplifies the entire process from fulfillment, order tracking to production.  Stand out features include a fully integrated proofing system and complete administrative console."],
   technology: "React, Redux, LESS"
 }, {
   title: 'Frontend Engineer',
@@ -110126,14 +110162,19 @@ function (_React$Component) {
         sm: 12
       }, _react.default.createElement(_Header.default, null), _react.default.createElement(_core.Typography, {
         variant: "h1",
-        gutterBottom: true,
         align: "center"
-      }, "Tommy Rosario"), _react.default.createElement("section", {
+      }, "Tommy Rosario"), _react.default.createElement("div", {
+        className: classes.company,
+        align: "center",
+        style: {
+          marginBottom: '40px'
+        }
+      }, "Seasoned Frontend Developer"), _react.default.createElement("section", {
         className: classes.section
       }, _react.default.createElement(_core.Typography, {
         variant: "h2",
         gutterBottom: true
-      }, "Hello"), _lodash.default.map(_about.default, function (para, idx) {
+      }, "About Me"), _lodash.default.map(_about.default, function (para, idx) {
         return _react.default.createElement(_core.Typography, {
           variant: "body1",
           gutterBottom: true,
@@ -110158,13 +110199,33 @@ function (_React$Component) {
       }, _react.default.createElement(_core.Typography, {
         variant: "h2",
         gutterBottom: true
-      }, "Skillset"), _lodash.default.map(_skillset.default, function (para, idx) {
-        return _react.default.createElement(_core.Typography, {
-          variant: "body1",
-          gutterBottom: true,
-          paragraph: true,
-          key: idx
-        }, para);
+      }, "Skills"), _react.default.createElement(_core.Typography, {
+        variant: "h3",
+        gutterBottom: true
+      }, "Coding"), _lodash.default.map(_skillset.default.coding, function (skill, idx) {
+        return _react.default.createElement(_core.Chip, {
+          label: skill,
+          key: idx,
+          className: classes.chip
+        });
+      }), _react.default.createElement(_core.Typography, {
+        variant: "h3",
+        gutterBottom: true
+      }, "Design"), _lodash.default.map(_skillset.default.design, function (skill, idx) {
+        return _react.default.createElement(_core.Chip, {
+          label: skill,
+          key: idx,
+          className: classes.chip
+        });
+      }), _react.default.createElement(_core.Typography, {
+        variant: "h3",
+        gutterBottom: true
+      }, "Project Management"), _lodash.default.map(_skillset.default.projectManagement, function (skill, idx) {
+        return _react.default.createElement(_core.Chip, {
+          label: skill,
+          key: idx,
+          className: classes.chip
+        });
       })), _react.default.createElement(_core.Divider, {
         className: classes.divider
       }), _react.default.createElement("section", {
@@ -110424,7 +110485,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41161" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39157" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
