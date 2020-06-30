@@ -100415,8 +100415,7 @@ function Header() {
     className: "far fa-envelope ".concat(classes.icon)
   })), _react.default.createElement("a", {
     href: "/resume.pdf",
-    title: "Download Resume",
-    download: true
+    title: "Download Resume"
   }, _react.default.createElement(_core.IconButton, {
     className: "fas fa-file-alt ".concat(classes.icon)
   })))));
