@@ -100590,9 +100590,13 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var SKILLSET = {
   /*   "React, Redux, Angular 8+, Typescript, Material UI, Jest, Enzyme, NodeJS, ES2015 (ES6), Babel, KnockoutJS, jQuery, Prototype / Scriptaculous, MooTools, native JavaScript, Handlebars JS, Mustache JS, Susy Grid, Bourbon/Neat, Twitter Bootstrap, Zurb Foundation, Parcel, Webpack, Grunt, HTML5, CSS3, tablet/mobile web apps, Chrome extension and Firefox Add-on development, SEO, responsive CSS patterns, CMS platforms including Wordpress and Django, and frameworks such as Symfony, Laravel, Drupal, Magento & Ofbiz." */
-  coding: ['react', 'redux', 'angular', 'typescript', 'es2015', 'javascript', 'scss', 'bootstrap', 'material-ui', 'html5', 'jest', 'enzyme', 'github', 'gitlab', '.NET'],
+  coding: {
+    frontend: ['react', 'redux', 'angular', 'typescript', 'es2015', 'javascript', 'scss', 'bootstrap', 'material-ui', 'html5', 'jest', 'enzyme'],
+    backend: ['nodejs', 'express', 'stripejs', '.NET']
+  },
   design: ['photoshop', 'zeplin'],
-  projectManagement: ['jira', 'zenhub', 'trello']
+  projectManagement: ['jira', 'zenhub', 'trello'],
+  repoManagement: ['git', 'github', 'gitlab']
 };
 var _default = SKILLSET;
 exports.default = _default;
@@ -110193,7 +110197,16 @@ function (_React$Component) {
       }, "Skills"), _react.default.createElement(_core.Typography, {
         variant: "h3",
         gutterBottom: true
-      }, "Coding"), _lodash.default.map(_skillset.default.coding, function (skill, idx) {
+      }, "Frontend"), _lodash.default.map(_skillset.default.coding.frontend, function (skill, idx) {
+        return _react.default.createElement(_core.Chip, {
+          label: skill,
+          key: idx,
+          className: classes.chip
+        });
+      }), _react.default.createElement(_core.Typography, {
+        variant: "h3",
+        gutterBottom: true
+      }, "Backend"), _lodash.default.map(_skillset.default.coding.backend, function (skill, idx) {
         return _react.default.createElement(_core.Chip, {
           label: skill,
           key: idx,
@@ -110476,7 +110489,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46719" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44329" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
